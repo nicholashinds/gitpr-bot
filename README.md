@@ -1,6 +1,6 @@
 # Discord Bot with GitHub Webhook Integration
 
-A small Discord bot that listens for GitHub pull request events via a webhook and notifies a specified Discord channel when a pull request is opened, reopened, or closed.
+A small Discord bot that listens for GitHub pull request events via a webhook and notifies a specified Discord channel when a pull request is opened or closed.
 
 ## Prerequisites
 
