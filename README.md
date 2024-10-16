@@ -43,7 +43,7 @@ PORT=3000
 ### 4. Get Your Discord Bot Token
 
 1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
-2. Under **Bot** settings, generate and copy the **Token** inside the `.env` file as `DISCORD_TOKEN`
+2. Under **Bot** settings, generate and copy the **Token** inside the `.env` file as `DISCORD_TOKEN`.
 3. Create a new application and under **OAuth2** > **OAuth2 URL Generator** settings, select the `bot` scope and then the `Send Messages` and `Manage Messages` permissions. Then, copy and paste the provided URL into a browser to invite the bot to your server.
 
 ### 5. Get the Discord Channel ID
@@ -77,12 +77,12 @@ ngrok http 3000
 ### 8. Generate a GitHub Webhook
 
 1. Go to the GitHub repository you want monitored.
-2. Click on **Settings** > **Webhooks** > **Add webhook**
+2. Click on **Settings** > **Webhooks** > **Add webhook**.
 3. In the **Payload URL**, paste the `ngrok` url + `/github-webhook` (e.g., `http://1234abcd.ngrok.io/github-webhook`).
 4. Set the **Content type** to `application/json`.
 5. Set the **Secret** to the same value as `GITHUB_WEBHOOK_SECRET`.
 6. Under the **Events** section, select **Let me select individual events** and **Pull requests**.
-7. Finally, click **Add webhook**
+7. Finally, click **Add webhook**.
 
 ### 9. Start the Server
 
@@ -96,8 +96,4 @@ node index.js
 
 - **Invalid Signature Error**: Ensure the **Secret** in your GitHub webhook matches `GITHUB_WEBHOOK_SECRET` in the `.env` file.
 - **Bot Not Responding**: Ensure the bot has the correct permissiosn to post and manage messages.
-- **Ngrok Connection Issues** If `ngrok` is disconnecting, try using the `ngrok` authtoken (create an account and select **Your Authtoken**) to keep it stable:
-
-```
-ngrok authtoken YOUR_AUTH_TOKEN
-```
+- **Ngrok Connection Issues** If `ngrok` is disconnecting, try using the `ngrok` authtoken (create an account and select **Your Authtoken**) to keep it stable: `ngrok authtoken YOUR_AUTH_TOKEN`.
